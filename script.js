@@ -1,20 +1,8 @@
-'use strict';
+"use strict";
 
 // const { canTreatArrayAsAnd } = require("sequelize/types/utils");
 
 // const e = require("express");
-
-// let a = 4
-// let b = 4
-// let c = 4
-
-// if(a === b && b === c){
-//     console.log("the 3 are equal")
-// }else if(a === b ||  b === c || c === a ){
-//     console.log("2 are the same")
-// }else{
-//     console.log("all variables are different")
-// }
 
 // let hasDriversLicense = false;
 // const passTest = true;
@@ -24,27 +12,7 @@
 //     console.log(`i can drive`)
 // }
 
-// Write a program that asks for a name and for an age.
-//  Check if the name is "Bob" and the age is 30 years. 
-//  If the data are correct, print "Welcome". Otherwise, print "Go Away".
-//   Try to optimize the prompts:
-//  don't ask for the age if the name is not the one expected.
-
-// const userName = prompt("what is your name ?")
-// if(userName === "Bob"){
-//     const userAge = prompt("what is users Age ?")
-//     if(userAge == 30){
-//         console.log("You are welcome")
-//     } else {
-//         console.log("Go Away")
-//     };
-    
-// }else{
-//     console.log("Wrong Username")
-// };
-
-
-// functions 
+// functions
 // a piece of code we can reuse similar to variable but holds chunks of codes
 // function logger (){
 // console.log(`get the fuck out`)
@@ -61,7 +29,6 @@
 // }
 // const applejuice = fruitProcessor(5,0);
 // console.log(applejuice)
-
 
 // function garriMachine(cassava, water){
 //     const finalResult = `final result will have ${cassava} paints of cassava and ${water} buckets of water`
@@ -86,8 +53,8 @@
 // Function expression
 // const calcAge2 = function (birthYear){
 //     const age3 = 2037 - birthYear
-//     return age3; 
-// or 
+//     return age3;
+// or
 // return 2037 - birthYear
 // }
 // const age = calcAge2(1991)
@@ -135,7 +102,7 @@
 //     }else {
 //         return 0
 //     }
-   
+
 //     }
 //     console.log (yearUntilRetirement(1990, "john"));
 //     console.log (yearUntilRetirement(1950, "christopher"));
@@ -180,7 +147,6 @@
 // const johnson = [firstName, 'keeny', 2037 - 1994,'student',friends]
 // console.log(johnson)
 
-
 // function calcAge (birthYear){
 //         return 2037 - birthYear;
 //     }
@@ -193,7 +159,6 @@
 
 // const ages = [age1, age2, age4]
 // console.log(ages)
-
 
 // Basic Array Operators
 // const friends = ['micheal', 'steven', 'paul'];
@@ -264,7 +229,268 @@
 // console.log(jonas.friends[2])
 // console.log('shitty'+ nameKey)
 
+// const interest = prompt(`what do you want to know about jonas ? chhose between firstName, lastName, age, job and friends`)
+// console.log(interest)
+// console.log(jonas[interest]) accessing an object using the square bracket
+// jonas.location = 'Germany';
+// jonas['twitter'] = `@tetre101`;
+// console.log(jonas)
 
+// let a = 4
+// let b = 4
+// let c = 4
+
+// if(a === b && b === c){
+//     console.log("the 3 are equal")
+// }else if(a === b ||  b === c || c === a ){
+//     console.log("2 are the same")
+// }else{
+//     console.log("all variables are different")
+// }
+
+// let hasDriversLicense = false;
+// const passTest = true;
+
+// if(passTest) hasDriversLicense = true;
+// if(hasDriversLicense){
+//     console.log(`i can drive`)
+// }
+
+// Write a program that asks for a name and for an age.
+//  Check if the name is "Bob" and the age is 30 years.
+//  If the data are correct, print "Welcome". Otherwise, print "Go Away".
+//   Try to optimize the prompts:
+//  don't ask for the age if the name is not the one expected.
+
+// const userName = prompt("what is your name ?")
+// if(userName === "Bob"){
+//     const userAge = prompt("what is users Age ?")
+//     if(userAge == 30){
+//         console.log("You are welcome")
+//     } else {
+//         console.log("Go Away")
+//     };
+
+// }else{
+//     console.log("Wrong Username")
+// };
+
+// functions
+// a piece of code we can reuse similar to variable but holds chunks of codes
+// function logger (){
+// console.log(`get the fuck out`)
+// }
+// logger();
+// logger();
+// logger();
+
+// (
+// function fruitProcessor(apples, oranges){
+//     console.log(apples,oranges);
+//     const juice = `juice with ${apples} apples and ${oranges} oranges`
+//     return juice;
+// }
+// const applejuice = fruitProcessor(5,0);
+// console.log(applejuice)
+
+// function garriMachine(cassava, water){
+//     const finalResult = `final result will have ${cassava} paints of cassava and ${water} buckets of water`
+//     return finalResult
+// }
+// console.log(garriMachine("beans", "moi-moi"));
+// const farmersWill = garriMachine(8,5)
+// console.log(farmersWill)
+
+// Function declaration vs expression
+// the parameter is the placeholder in the function e.g cassava, water as above
+//  and the arguement is the actual value that was used to fill in the placeholder e.g 8,5 as above.
+// Function Declaration
+// function calcAge1(birthYear){
+//     const age = 2037 - birthYear
+//     return age;
+// }
+// const age1 = calcAge1(1991);
+// const age2 = calcAge1(2022)
+// console.log(age1, age2)
+
+// Function expression
+// const calcAge2 = function (birthYear){
+//     const age3 = 2037 - birthYear
+//     return age3;
+// or
+// return 2037 - birthYear
+// }
+// const age = calcAge2(1991)
+// console.log(age)
+
+// function declarations can be called before they're defined in a code
+// but that's not possible with expressions
+
+// Arrow Functions
+// const yearUntilRetirement =(birthYear, firstName)=>{
+// const age = 2037 - birthYear;
+// const retirement = 65 - age;
+// return `${firstName} retires in ${retirement} years
+// `;
+// }
+// console.log(yearUntilRetirement(1991,"cynthia"))
+// console.log(yearUntilRetirement(1980, "Ben"))
+
+// Functions calling other functions
+
+// const cutPieces = function(fruit){
+//     return fruit * 4 ;
+// }
+
+// function fruitProcessor(apples, oranges){
+//     const applePieces = cutPieces(apples);
+//     const orangePieces = cutPieces(oranges)
+//         console.log(apples,oranges);
+//         const juice = `juice with ${applePieces} apples and ${orangePieces} oranges`
+//         return juice;
+//     }
+//     console.log (fruitProcessor(2,4))
+
+// Reviewing Functions
+
+// function calcAge (birthYear){
+//     return 2037 - birthYear;
+// }
+// const yearUntilRetirement = function(birthYear, firstName){
+//     const age = calcAge(birthYear);
+//     const retirement = 65 - age;
+
+//     if (retirement > 0){
+//         return retirement
+//     }else {
+//         return 0
+//     }
+
+//     }
+//     console.log (yearUntilRetirement(1990, "john"));
+//     console.log (yearUntilRetirement(1950, "christopher"));
+
+// coding challenge
+// const calcAverage = (a,b,c)=>{
+// return (a + b + c) / 3
+// }
+// console.log(calcAverage(12,8,10))
+
+// let scoreDolphins = calcAverage(44, 23, 71);
+// let scoreKoalas = calcAverage(65,54,49)
+// console.log(scoreDolphins, scoreKoalas)
+
+// const checkWinner = function (avgDolphins, avgKoalas) {
+//     if (avgDolphins >= 2 * avgKoalas) {
+//         console.log(`Dolphins won`)
+//     } else if ( avgKoalas >= 2 * avgDolphins){
+//         console.log(`Koalas won`)
+//     }else{
+//         console.log(`No winner`)
+//     }
+// }
+// console.log(checkWinner(scoreDolphins,scoreKoalas))
+// checkWinner(scoreDolphins, scoreKoalas)
+
+// // Test 2
+// scoreDolphins = calcAverage(85,54,41)
+// scoreKoalas = calcAverage(23,34,27)
+// console.log(scoreDolphins,scoreKoalas)
+// checkWinner(scoreDolphins,scoreKoalas)
+
+// Introduction to Arrays
+// const friends = ['micheal', 'steven', 'paul'];
+// console.log(friends[0]) index of the array
+// console.log(friends.length) length of array
+// console.log(friends[friends.length - 1]) last element of the array
+// friends [2] = 'jay'  //this replaces the array on that spot with the new name
+// console.log(friends)
+
+// const firstName = 'johnson'
+// const johnson = [firstName, 'keeny', 2037 - 1994,'student',friends]
+// console.log(johnson)
+
+// function calcAge (birthYear){
+//         return 2037 - birthYear;
+//     }
+// const years = new Array(1990,1994,1995,1997,1999)
+// // console.log(years)
+// const age1 = calcAge(years[0])
+// const age2 = calcAge(years[2])
+// const age4 = calcAge(years[years.length -1 ])
+// console.log(age1, age2, age4)
+
+// const ages = [age1, age2, age4]
+// console.log(ages)
+
+// Basic Array Operators
+// const friends = ['micheal', 'steven', 'paul'];
+// adds element to end of array
+// friends.push(`jay`);
+// console.log(friends)
+
+// adds element at the begining of an array
+// friends.unshift(`john`)
+// console.log(friends)
+
+// removes last element of array
+// friends.pop()
+// console.log(friends)
+
+// removes first element
+// friends.shift()
+// console.log(friends)
+
+// find the position and returns the position number
+// console.log(friends.indexOf(`paul`))
+
+// looks for the element if it's in the array and returns true or false
+// console.log(friends.includes(`paul`))
+// console.log(friends.includes(`Peter`))
+
+// const calcTip = (bill)=>{
+// return bill >= 50 && bill<= 300 ? bill * 0.15 : bill * 0.20;
+// }
+// const bill = new Array(125, 555, 44)
+// const tip = [calcTip(bill[0]), calcTip(bill[1]), calcTip(bill[2])]
+// const totals = [bill[0] + tip[0],bill[1] + tip[1],bill[2] + tip[2]]
+// console.log(bill, tip, totals)
+
+// objects
+// const jonasArray = [
+//     'jonas',
+//     'martinez',
+//     2037-1991,
+//     'teacher',
+//     ["micheal", "john"," paul"]
+// ];
+
+// const jonas = {
+//     firstName: 'jonas',
+//     lastName: 'Martinez',
+//     age: 2037 -1991,
+//     job:"teacher",
+//     friends: ["micheal", "john"," paul"]
+// };
+// an object provides the opportunity of a property to define the elements of Jonas
+
+// retrieving and changing data in an object using dot vs bracket notation
+
+// const jonas = {
+//     firstName: 'jonas',
+//     lastName: 'Martinez',
+//     age: 2037 -1991,
+//     job:"teacher",
+//     friends: ["micheal", "john"," paul"]
+// };
+// console.log(jonas.lastName)
+// console.log(jonas["lastName"])
+
+// const nameKey = 'Name';
+// console.log(jonas['first' + nameKey])
+// console.log(jonas['last' + nameKey])
+// console.log(jonas.friends[2])
+// console.log('shitty'+ nameKey)
 
 // const interest = prompt(`what do you want to know about jonas ? chhose between firstName, lastName, age, job and friends`)
 // console.log(interest)
@@ -284,7 +510,6 @@
 // return 2037 - birthYear
 // } this function is declaration
 
-
 // Objects methods
 // const jonas = {
 //     firstName: 'jonas',
@@ -294,13 +519,13 @@
 //     friends: ["micheal", "john"," paul"],
 //     hasDriversLicense : true,
 
-    // calcAge: function(birthYear){
-    //  return 2037 - birthYear
-    // }
-    // calcAge: function(){
-    //     console.log(this.birthYear)
-    //     return 2037 - this.birthYear
-    //    }
+// calcAge: function(birthYear){
+//  return 2037 - birthYear
+// }
+// calcAge: function(){
+//     console.log(this.birthYear)
+//     return 2037 - this.birthYear
+//    }
 //     calcAge: function(){
 //        this.age = 2037 - this.birthYear;
 //         return this.age
@@ -339,10 +564,8 @@
 // Mark.calcBMI();
 // John.calcBMI();
 
-
 // console.log(Mark.bmi)
 // console.log(John.bmi)
-
 
 // Iteration : The for loop
 
@@ -353,13 +576,13 @@
 
 // Looping Arrays, Breaking and continuing
 
-const jonasArray = [
-    'jonas',
-    'martinez',
-    2037-1991,
-    'teacher',
-    ["micheal", "john"," paul"]
-];
+// const jonasArray = [
+//     'jonas',
+//     'martinez',
+//     2037-1991,
+//     'teacher',
+//     ["micheal", "john"," paul"]
+// ];
 
 // for(let i = 0; i <= jonasArray.length; i++){
 //     console.log(jonasArray[i], typeof jonasArray[i])
@@ -398,14 +621,13 @@ const jonasArray = [
 //     }
 // }
 
-
 // WHILE LOOP
 // for(let x = 1; x <= 10; x++){
 //     console.log(`lifting weights and counting by ${x}`)
 // }
 // "-----------------------------------------"
 
-// let rep = 1; 
+// let rep = 1;
 // while( rep <= 10){
 //     console.log(`WHILE : lifting weights and counting by ${rep}`)
 //     rep++;
@@ -420,7 +642,6 @@ const jonasArray = [
 //  }
 // }
 
-
 // checkpoint
 // const calcTip = (bill)=>{
 // return bill >= 50 && bill<= 300 ? bill * 0.15 : bill * 0.20;
@@ -433,7 +654,7 @@ const jonasArray = [
 //     const tip = calcTip(bills[i]);
 //     tips.push(tip)
 //     totals.push(tip + bills[i]);
-    
+
 // }
 // console.log(tips,bills, totals)
 
@@ -448,4 +669,3 @@ const jonasArray = [
 // console.log(calcAverage( [3, 4, 8]));
 // console.log(calcAverage(totals))
 // console.log(calcAverage(tips))
-
