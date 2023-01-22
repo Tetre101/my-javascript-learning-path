@@ -252,3 +252,35 @@
 // }
 /* Step 4: Create a for loop, for each element of the array, 
  call the function createCard with the corresponding parameter */
+
+// New Task
+
+//  Object Oriented Programming
+
+// Create a new factory function for the heroes!
+
+// The heroes should have a name, a level, a weapon and a function to say hello
+//  that returns a sentence with their name.
+
+// Then create two heroes calling the function.
+
+// Write the constructor function here
+
+// function createHero(name, level, weapon) {
+//     const hero = {};
+//     hero.name = name;
+//     hero.level = level;
+//     hero.weapon = weapon;
+
+//     hero.greetings = function () {
+//       return `Hello my name is ${this.name}`;
+//     };
+//     return hero;
+//   }
+
+//   const heroes = [
+//     createHero("spiderman", 4, "web"),
+//     createHero("Hulk", 5, "Hammer")
+//   ];
+
+//   console.log(heroes);
