@@ -284,3 +284,62 @@
 //   ];
 
 //   console.log(heroes);
+
+// Using Constructor function
+
+// Now, create the same function for the heroes.
+// function Heroes(name, level, weapon) {
+//     this.name = name;
+//     this.level = level;
+//     this.weapon = weapon;
+
+//     this.greetings = function () {
+//       return `${this.name} says Hello`;
+//     };
+//   }
+
+//   const general = new Heroes("spiderman", 4, "web");
+//   console.log(general.greetings(), general);
+
+// Classes
+// 🔬 Experiment:
+// Create a class for our heroes.
+
+// class Hero {
+//     constructor(name, level, weapon) {
+//       this.name = name;
+//       this.level = level;
+//       this.weapon = weapon;
+//     }
+
+//     greetings() {
+//       return `Hello to ${this.name}`;
+//     }
+//   }
+
+//   const Heroes = [
+//      new Hero("spiderman", 4, "web"),
+//      new Hero("Batman", 3, "bat")
+// ];
+
+//   console.log(Heroes[1].greetings());
+
+// Object Oriented Programming - Prototypes
+
+// function Hero(name, level, weapon) {
+//   this.name = name;
+//   this.level = level;
+//   this.weapon = weapon;
+// }
+
+// Hero.prototype.greetings = function() {
+//   return `Hello to ${this.name}`;
+// }
+
+// const Heroes = [
+//  new Hero("spiderman", 4, "web"),
+//  new Hero("Batman", 3, "bat")
+// ];
+
+// console.log(Heroes[1]);
+// understanding how js works under the hood and how to avoid calling functions multiple times but just when it is needed
