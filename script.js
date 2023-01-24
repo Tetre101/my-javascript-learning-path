@@ -669,3 +669,4 @@
 // console.log(calcAverage( [3, 4, 8]));
 // console.log(calcAverage(totals))
 // console.log(calcAverage(tips))
+
