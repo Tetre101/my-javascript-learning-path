@@ -3,6 +3,8 @@
 // storeWall.innerHTML = "H1 successfully created";
 // body.appendChild(storeWall);
 
+const { isType } = require("graphql");
+
 // let dogs = document.querySelectorAll('.img-dog');
 // for(let dog of dogs){
 //   dog.remove()
@@ -395,3 +397,92 @@
 // 	"TATTCAAGTATTCAAGTATTCAAGTATTCAAGTATTCAAGTATTCAAGTATTCAAGTATTCAAGTATTCAAGTATTCAAGTATTCAAGTATTCAAGTATTCAAGTATTCAAGTATTCAAGTATTCAAGTATTCAAGTATTCAAGTATTCAAGTATTCAAGTATTCAAGTATTCAAGTATTCAAGTATTCAAGTATTCAAGTATTCAAGTATTCAAGTATTCAAGTATTCAAGTATTCAAGTATTCAAGTATTCAAGTATTCAAGTATTCAAGTATTCAAGTATTCAAGTATTCAAG"
 // );
 // dnaComplement("");
+
+// function logArray(array = [1, 6, 8, 9]) {
+//   for (let i = 0; i < array.length; i++) {
+//     console.log(array[i]);
+//   }
+// }
+
+// logArray([5, 8, 9, 0]);
+
+// function sum(a, b) {
+//   return a + b
+// }
+
+// equivalent to
+// const sum = (a, b) => { return a + b };
+
+// also equivalent to
+// const sum = (a,b) => a + b;
+
+// variable declaration
+// const leads = {
+// name: "john",
+// age:43,
+// height:1.4,
+// }
+
+// let {name,age,height} = leads
+// console.log(height);
+
+// IIFE (Immediately Invoked Function Expression)
+// (function () {
+//   console.log(`second phase trials`);
+// })();
+
+// Understanding Higher order function and passing another function as an arguement to it(callback function)
+// function sayHello(userName) {
+//   console.log(`Hello, ${userName}`);
+// }
+
+// function sayWelcome(userName) {
+//   console.log(`Welcome, ${userName}`);
+// }
+
+// function askUserName(callback) {
+//   const name = prompt("Hey, what's your name?");
+//   callback(name);
+// }
+
+// askUserName(sayWelcome);
+// askUserName(sayHello);
+
+// function sum (num){
+// console.log(2 + num)
+// }
+
+// function multip (num){
+//   console.log(2 * num)
+// }
+
+// function calculator (solve){
+//   const result = 10
+//   solve(result)
+// }
+
+// calculator(sum)
+// calculator(multip)
+
+// 🔬Experiment
+// Create two functions:
+
+// A function multiply that can accept two parameters a and b: the function should  return the result of a * b.
+// A function sum that can accept two parameters a and b: the function should return the result of a + b.
+// Then, create a higher-order function calculator that can accept three parameters: a callback function,
+// and two values a and b. Your calculator function should console.log :
+
+// "The result is" + the result of the callback function with a and b as arguments
+
+// function sum(a, b) {
+//   console.log(a + b);
+// }
+// function multiply(a, b) {
+//   console.log(a * b);
+// }
+
+// function calculator(callback, a, b) {
+//   callback(a, b);
+// }
+
+// calculator(multiply, 2, 4);
