@@ -513,3 +513,21 @@ const { isType } = require("graphql");
 // const newDetails = animals.map(e=> `${e.name} is from ${e.species} specie`
 // )
 // console.log(newDetails)
+
+// Using the index parameter
+
+// const animals = [
+//   { name: "Hector", species: "Beaver" },
+//   { name: "Edouard", species: "Duck" },
+//   { name: "José", species: "Boar" },
+//   { name: "Charlotte", species: "Groundhog" },
+//   { name: "Mireille", species: "Bee" },
+//   { name: "Leon", species: "Hornet" },
+//   { name: "Fedor", species: "Pig" },
+// ];
+
+// const sentences = animals.map(
+//   (animal, index) => `${animal.name} the ${animal.species}, the number ${index}`
+// );
+
+// console.log(sentences);
