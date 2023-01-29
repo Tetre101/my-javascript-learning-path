@@ -486,3 +486,30 @@ const { isType } = require("graphql");
 // }
 
 // calculator(multiply, 2, 4);
+
+// Array Methods
+
+// Map
+// const numbers = [3, 5, 6, 9, 4];
+// const double = numbers.map((el) => el * 3);
+// console.log(double);
+
+// Use map to create a new array that contains the animal's name and species as a sentence.
+// const animals = [
+//   { name: "Hector", species: "Beaver" },
+//   { name: "Edouard", species: "Duck" },
+//   { name: "José", species: "Boar" },
+//   { name: "Charlotte", species: "Groundhog" },
+//   { name: "Mireille", species: "Bee" },
+//   { name: "Leon", species: "Hornet" },
+//   { name: "Fedor", species: "Pig" }
+// ];
+// const fix = animals.map((e)=>{
+//   return `${e.name} is a ${e.species}`
+// })
+// console.log(fix)
+
+//
+// const newDetails = animals.map(e=> `${e.name} is from ${e.species} specie`
+// )
+// console.log(newDetails)
