@@ -565,3 +565,127 @@ a new li element
   - animal.emoji - animal.name
 = Then we want to add the element to the li. 
 */
+// Notice**
+// Every and foreach do not return a new array
+// and are therefore implemented in a similar way.
+// However, foreach returns values but every returns booleans
+
+// Every
+// The every method checks if all the arrays element matches with a condition.
+//  The result of every is a boolean.
+// const myArray = [12, 34, 54, 32, 54];
+// console.log(myArray.every((e) => e >= 10));
+
+// const teamOne = [
+//   {
+//     name: "Bob",
+//     age: 19
+//   },
+//   {
+//     name: "Pierre",
+//     age: 17
+//   },
+//   {
+//     name: "Karl",
+//     age: 16
+//   },
+//   {
+//     name: "Ryan",
+//     age: 21
+//   }
+// ];
+
+// const teamTwo = [
+//   {
+//     name: "Nadia",
+//     age: 19
+//   },
+//   {
+//     name: "Hector",
+//     age: 20
+//   },
+//   {
+//     name: "Maria",
+//     age: 25
+//   },
+//   {
+//     name: "Bryan",
+//     age: 21
+//   }
+// ];
+
+// function checkIfAdult(array) {
+// Type your code here
+//  let result = array.every(e=> e.age >= 18)
+//  if(result){
+//  console.log('All the player have the required age to play')
+// }else{
+//   console.log(`At least one of the team player doesn't have the minimum age`)
+// }}
+
+// checkIfAdult(teamOne);
+
+// checkIfAdult(teamTwo);
+
+// SOME
+// The some method is very similar to every,
+// except one element verifying the condition is enough for the method to return true.
+// const myArray = [11, 34, 54, 32, 54];
+// console.log(myArray.some(element => element > 30));
+
+// Filter
+// The filter method will create a new array
+// with only the elements that verify a condition.
+
+// const myArray = [3, 2, 40, 15, 20];
+// const numMax = myArray.filter((e) => e >= 5);
+// console.log(numMax);
+
+// const animals = [
+//   {
+//     name: "Oscar",
+//     species: "Dog"
+//   },
+//   {
+//     name: "Max",
+//     species: "Cat"
+//   },
+//   {
+//     name: "Tiger",
+//     species: "Cat"
+//   },
+//   {
+//     name: "Sam",
+//     species: "Dog"
+//   },
+//   {
+//     name: "Ginger",
+//     species: "Cat"
+//   },
+//   {
+//     name: "Gizmo",
+//     species: "Dog"
+//   },
+//   {
+//     name: "Billy",
+//     species: "Cat"
+//   }
+// ];
+
+// // Your code here
+// const catDoc = animals.filter((e) => {
+//   return e.species === "Cat";
+// });
+// console.log(catDoc);
+
+// Reduce
+// The reduce method will reduce the array to a single value.
+// const myArray = [13, 200, 404, 430, 10];
+// let result = myArray.reduce((acc, e) => acc - e);
+// console.log(result);
+// const myArray = [13, 200, 404, 430, 10];
+// let result = myArray.reduce((acc, currentVl)=>{
+//   console.log(currentVl);
+//   return acc + currentVl
+// }, 100)
+// console.log(result);
