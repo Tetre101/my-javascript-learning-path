@@ -689,3 +689,70 @@ a new li element
 //   return acc + currentVl
 // }, 100)
 // console.log(result);
+
+// Destructuring assignments
+// 🪓 Decompose and rule
+// Object Destructuring
+// const product = { name: "socks", price: 5, color: "red" };
+// const name = product.name;
+// const price = product.price;
+// const color = product.color;
+
+// console.log(`Those ${color} ${name} cost ${price} euros`);
+
+// Destructuring allows us to greatly reduce the amount of code :
+
+// const product = { name: "socks", price: 5, color: "red" };
+// const { name, price, color } = product;
+// console.log(`Those ${color} ${name} cost ${price} euros`);
+// Here, we declare variables with the same name as the keys of the object on which we extract things.
+
+// Arrays Destructuring
+// This code is way to verbose :
+
+// const animals = ["Hubert", "Rosemary", "Paul"];
+// const hamster = animals[0];
+// const kiwi = animals[1];
+// const guineaFowl = animals[2];
+
+// console.log(hamster); // "Hubert"
+// console.log(kiwi); // "Rosemary"
+// console.log(guineaFowl); // "Paul"
+// Luckily, destructuring also works with arrays ! The syntax, is a bit different :
+
+// const animals = ["Hubert", "Rosemary", "Paul"];
+// const [hamster, kiwi, guineaFowl] = animals;
+
+// console.log(hamster); // "Hubert"
+// console.log(kiwi); // "Rosemary"
+// console.log(guineaFowl); // "Paul"
+
+// const fruits = ["🍏", "🍍", "🥝", "🥑", "🍒", "🍓"];
+
+// Write your code here
+// const[apple, pineapple, kiwi, avocado,berries,strawberries] = fruits
+// console.log(apple)
+
+// Spread/Rest
+
+// Object
+// const product = { name: "socks", price: 5, color: "red" };
+// const { price, ...otherProperties } = product;
+
+// console.log(price);
+// console.log(otherProperties)
+
+// Arrays
+// const animals = ["Hubert", "Rosemary", "Paul", "Pierre"];
+// const [hamster, kiwi, ...others ] = animals;
+
+// console.log(hamster); // "Hubert"
+// console.log(kiwi); // "Rosemary"
+// console.log(others); // ["Paul", "Pierre"];
+
+// Experiment
+// const fruits = ["🍏", "🍍", "🥝", "🥑", "🍒", "🍓"];
+
+// Write your code here
+// const[apple,pineapple, ...otherProducts] = fruits
+// console.log(otherProducts)

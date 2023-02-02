@@ -1,5 +1,7 @@
 "use strict";
 
+const { convertNodeHttpToRequest } = require("apollo-server-core");
+
 // const { canTreatArrayAsAnd } = require("sequelize/types/utils");
 
 // const e = require("express");
@@ -670,3 +672,20 @@
 // console.log(calcAverage(totals))
 // console.log(calcAverage(tips))
 
+// UNDERSTANDING HOW JS REALLY WORKS
+// HIGH LEVEL OVERVIEW OF JS
+// JS IS A HIGH LEVEL, OBJECT ORIENTED, MULTI-PARADIGM PROGRAMMING LANGUAGE.A
+
+// JS AS A HIGH LEVEL(we don't have to manage resources)
+// bc these languages(python and js) have abstraction that takes care of that
+// DOWNSIDE TO THIS IS THAT THE PROGRAM WON'T BE AS FAST AND OPTIMIZED
+
+// JS AS GARBAGE-COLLECTION
+// An algorithm inside javascript that removes old unused
+// objects from computer memory
+
+// JS AS AN INTERPRETED OR JUST-IN-TIME COMPILER
+// compiling machine codes/interpreting them
+
+// JS AS MULTI-PARADIGM LANGUAGE
+// paradigm:an approach of structuring code
