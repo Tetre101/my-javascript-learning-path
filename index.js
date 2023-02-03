@@ -756,3 +756,39 @@ a new li element
 // Write your code here
 // const[apple,pineapple, ...otherProducts] = fruits
 // console.log(otherProducts)
+
+const people = [
+  "JoHn",
+  "ChrISTiana",
+  "anThoNY",
+  "MARia",
+  "jaMeS",
+  "MIChaEl",
+  "jeNNIFeR",
+];
+const result = [];
+let result2 = [];
+const refactor = (names) => {
+  for (let i = 0; i < names.length; i++) {
+    let nameArray = names[i].split("");
+    for (let j = 0; j < nameArray.length; j++) {
+      if (j === 0) {
+        if (nameArray[j] != nameArray[j].toUpperCase()) {
+          const new1 = nameArray[j].toUpperCase();
+          result2.push(new1);
+        } else {
+          result2.push(nameArray[j]);
+        }
+      } else {
+        result2.push(nameArray[j].toLowerCase());
+      }
+    }
+    result.push(result2.join(""));
+    result2 = [];
+  }
+
+  console.log(result);
+};
+
+const bigDaddy = (people, callback) => {};
+refactor(people);
