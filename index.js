@@ -766,29 +766,86 @@ const people = [
   "MIChaEl",
   "jeNNIFeR",
 ];
-const result = [];
-let result2 = [];
-const refactor = (names) => {
-  for (let i = 0; i < names.length; i++) {
-    let nameArray = names[i].split("");
-    for (let j = 0; j < nameArray.length; j++) {
-      if (j === 0) {
-        if (nameArray[j] != nameArray[j].toUpperCase()) {
-          const new1 = nameArray[j].toUpperCase();
-          result2.push(new1);
-        } else {
-          result2.push(nameArray[j]);
-        }
-      } else {
-        result2.push(nameArray[j].toLowerCase());
-      }
-    }
-    result.push(result2.join(""));
-    result2 = [];
-  }
+// const result = [];
+// let result2 = [];
+// const refactor = (names) => {
+//   for (let i = 0; i < names.length; i++) {
+//     let nameArray = names[i].split("");
+//     for (let j = 0; j < nameArray.length; j++) {
+//       if (j === 0) {
+//         if (nameArray[j] != nameArray[j].toUpperCase()) {
+//           const new1 = nameArray[j].toUpperCase();
+//           result2.push(new1);
+//         } else {
+//           result2.push(nameArray[j]);
+//         }
+//       } else {
+//         result2.push(nameArray[j].toLowerCase());
+//       }
+//     }
+//     result.push(result2.join(""));
+//     result2 = [];
+//   }
 
-  console.log(result);
-};
+//   console.log(result);
+// };
 
-const bigDaddy = (people, callback) => {};
-refactor(people);
+// const bigDaddy = (people, callback) => {};
+// refactor(people);
+
+// const results = [];
+// let results2 = [];
+// const refactor2 = (names) => {
+//   for (let name of names) {
+//     let nameArray = name.split("");
+
+//     for (let nameA of nameArray) {
+//       if (nameArray.indexOf(nameA) === 0) {
+//         nameA != nameA.toUpperCase()
+//           ? results2.push(nameA.toUpperCase())
+//           : results2.push(nameA);
+//       } else {
+//         results2.push(nameA.toLowerCase());
+//       }
+//     }
+//     results.push(results2.join(""));
+//     results2 = [];
+//   }
+
+//   console.log(results);
+// };
+
+// const bigDaddy2 = (people, callback) => {
+//   callback(people);
+// };
+// refactor2(people);
+
+// bigDaddy2(people, refactor2);
+
+// const results = [];
+// let results2 = [];
+// const refactor2 = (names) => {
+//   names.forEach((e, i) => {
+//     let err = e.split("");
+//     err.forEach((f, g) => {
+//       if (err.indexOf(f) === 0) {
+//         f !== f.toUpperCase()
+//           ? results2.push(f.toUpperCase())
+//           : results2.push(f);
+//       } else {
+//         results2.push(f.toLowerCase());
+//       }
+//     });
+//     results.push(results2.join(""));
+//     results2 = [];
+//   });
+// };
+
+// const bigDaddy2 = (people, callback) => {
+//   callback(people);
+// };
+// refactor2(people);
+
+// bigDaddy2(people, refactor2);
+
+// console.log(results);

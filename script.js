@@ -1,6 +1,8 @@
 // "use strict";
 
+const { convertNodeHttpToRequest } = require("apollo-server-core");
 const { application } = require("express");
+const { json } = require("sequelize");
 
 // const { convertNodeHttpToRequest } = require("apollo-server-core");
 
@@ -718,3 +720,23 @@ const { application } = require("express");
 // in a situation we wnat various tasks performed like getting an application, we use
 // event loop to take the long running tasks, executes them in the "background" and puts them back in the main thread
 // once they're finished
+
+// JS ENGINE AND RUNTIME
+// JS ENGINE-program that executes js code.
+// Any JS engine contains a Call stack and a heap
+// code is executed in call stack using execution context
+// heap unstructured memory pool that stores the objects of the app
+// compilation and interpreation
+// Compilation:the entire source code is converted into machine code at once
+// and written to a binary file taht can be executed by a computer
+// Interpretation: interpreter runs through the source code and executes it line by line
+// JS USES JUST-IN-TIME COMPILATION(JIT)-- entire code is converted into machine code at once, then executed immediately
+
+// JS RUN TIME
+// A big container that includes all the things we need to use json(in this case in the browser)
+
+// WEB APIS are functionalities provided to the engine, accessible on window Object.
+// e.g DOM,FETCH API,TIMERS, console.LOG
+
+// CALLBACK QUEUE
+// click, timer, data
