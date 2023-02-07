@@ -487,6 +487,20 @@ const { isType } = require("graphql");
 
 // calculator(multiply, 2, 4);
 
+// function sum(a,b){
+//   return a + b
+// }
+// function multiply (a,b){
+//   return a * b
+// }
+
+// function calculator(callback,a,b){
+//   console.log(`the result is ${callback(a,b)}`)
+
+// }
+// calculator(sum,5,7)
+// calculator(multiply,4,5)
+
 // Array Methods
 
 // Map
@@ -757,15 +771,15 @@ a new li element
 // const[apple,pineapple, ...otherProducts] = fruits
 // console.log(otherProducts)
 
-const people = [
-  "JoHn",
-  "ChrISTiana",
-  "anThoNY",
-  "MARia",
-  "jaMeS",
-  "MIChaEl",
-  "jeNNIFeR",
-];
+// const people = [
+//   "JoHn",
+//   "ChrISTiana",
+//   "anThoNY",
+//   "MARia",
+//   "jaMeS",
+//   "MIChaEl",
+//   "jeNNIFeR",
+// ];
 // const result = [];
 // let result2 = [];
 // const refactor = (names) => {

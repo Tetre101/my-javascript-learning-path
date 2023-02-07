@@ -3,6 +3,7 @@
 const { convertNodeHttpToRequest } = require("apollo-server-core");
 const { application } = require("express");
 const { json } = require("sequelize");
+const { SequelizeScopeError } = require("sequelize/types/errors");
 
 // const { convertNodeHttpToRequest } = require("apollo-server-core");
 
@@ -740,3 +741,32 @@ const { json } = require("sequelize");
 
 // CALLBACK QUEUE
 // click, timer, data
+
+// EXECUTION CONTEXT AND CALL STACK
+// Execution context is an environment in which a piece of js is executed.
+// it's like a box that stores all the necessary info for some code to be executed
+
+// SCOPE AND THE SCOPE CHAIN
+// scoping: controls how our programme variables are controlled and organized.
+// scope is the environment in which a certain variable is declared. there's global scope
+// function scope and block scope
+
+// Global scope: outside of any block, generally sccessible
+// function scope: variables accessible only inside the function / local scope
+// block scope: blocks means everything between curly braces. it only applies to let and const variables
+// variables declared with VAR block scopes don't apply at all
+
+// DIFFERENCE BETWEEN SCOPE CHAIN AND CALL STACK
+// scope chain has nothing to do with order in which functions were called
+// and taht's exactly the opposite of call stack
+
+// summary:
+// Scoping asks the question "where do variables live ?".
+// 3 types of scopes : global, function and block.
+// only let and const variables are block scoped.
+// in js, we have lexical scoping so the rules of where we can access variables are based
+// on exactly where in the code functions and blocks are written
+// every scope always has access to all the variables from all it's outer scopes.{this is the scope chain}
+// when a variable is not in the current SequelizeScopeError, the engine looks up in the scope chain until it finds it.
+// this is called VARIABLE LOOKUP
+// The scope chain is a one-way Street, it will never have access of the variables of an inner scope
