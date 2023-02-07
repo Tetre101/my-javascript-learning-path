@@ -1,9 +1,4 @@
-// "use strict";
-
-const { convertNodeHttpToRequest } = require("apollo-server-core");
-const { application } = require("express");
-const { json } = require("sequelize");
-const { SequelizeScopeError } = require("sequelize/types/errors");
+"use strict";
 
 // const { convertNodeHttpToRequest } = require("apollo-server-core");
 
@@ -770,3 +765,37 @@ const { SequelizeScopeError } = require("sequelize/types/errors");
 // when a variable is not in the current SequelizeScopeError, the engine looks up in the scope chain until it finds it.
 // this is called VARIABLE LOOKUP
 // The scope chain is a one-way Street, it will never have access of the variables of an inner scope
+
+// SCOPING IN PRACTICE
+
+// function calcAge(birthYear) {
+//   const age = 2037 - birthYear;
+
+//   function printAge() {
+//     let output = `${firstName}, you are ${age}, born in ${birthYear}`;
+//     console.log(output);
+
+//     if (birthYear >= 1981 && birthYear <= 1996) {
+//       var str2 = `this will work here bc var is functional based and not block`;
+
+// creating new variable with same name as outer scope's variable
+//   const firstName = "steven";
+
+// Reassigning outer scope's variable
+//   output = "NEW OUTPUT";
+
+//   const str = `you are a millenial , ${firstName}`;
+//   console.log(str);
+//   function add(a, b) {
+//     return a + b;
+//   }
+// }
+// console.log(str2);
+// console.log(add(2, 3));
+//   }
+//   printAge();
+//   return age;
+// }
+
+// const firstName = "John";
+// console.log(calcAge(1990));
