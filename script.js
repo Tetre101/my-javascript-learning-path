@@ -799,3 +799,38 @@
 
 // const firstName = "John";
 // console.log(calcAge(1990));
+
+// HOISTING IN JS/TDZ
+// const myName = 'Peter'
+// if(myName === 'Peter'){
+//     console.log(`Peter is a ${job}`)
+//     const age = 2037- 1994;
+//     console.log(age);
+//     (NOTE:FROM THE IF TO THIS POINT IS THE TDZ ..TEMPORARY DEAD ZONE)
+//     const job = 'Programmer'
+//     console.log(x)
+// }
+// Practicing Hoisting
+// Variables
+// console.log(me);
+// console.log(job);
+// console.log(year);
+
+// var me = 'Peter' returns undefines bc it is hoisted and set to undefined
+// let job = 'Programmer' isn't hoisted and this is why it was introduced in ES6
+// const year = 1994
+
+// Functions
+// console.log(addDeclr(2, 5));
+// console.log(addExpress(2, 5));
+// console.log(addArrow(2, 5));
+
+// The addDeclr will return output but the expression and arrow won't work bc of const
+// function addDeclr(a, b) {
+//   return a + b;
+// }
+
+// const addExpress = function (a, b) {
+//   return a + b;
+// };
+// const addArrow = (a, b) => a + b;
