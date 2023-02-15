@@ -834,3 +834,49 @@
 //   return a + b;
 // };
 // const addArrow = (a, b) => a + b;
+
+// How The This Keyword Works
+// ways to call function
+// METHOD(IN AN OBJECT)
+// SIMPLE FUNCTION CALL(this = undefined)
+// ARROW FUNCTIONS(this is used for the surrounding function(lexical this))
+// EVENT AudioListener(this = DOM element that the handler is attached)
+
+// "THIS" does not POINT to the function itself and also NOT its varaible environment
+// const calcAge = function(birthYear){
+//     console.log(2037 - birthYear);
+//     console.log(this);
+
+// }
+// calcAge(1994)
+// this will return undeined in a regular function that isn't attached to an object
+
+// const calcAgeArrow = (birthYear) => {
+//   console.log(2037 - birthYear);
+//   console.log(this);
+// };
+// calcAgeArrow(1994);
+// the this key word in arrow function is a lexical this keyword,it's the parent scope which is WINDOW
+
+// const jonas = {
+//   year: 1994,
+//   calcAge: function () {
+//     console.log(this);
+//     console.log(2037 - this.year);
+//   },
+// };
+// jonas.calcAge();
+// the "this" here is the jonas object, jonas is the owner of the method and is pointed to with "this"
+// the "this" keyword will always point to the object calling the Method
+// const matilda = {
+//   year: 2017,
+// };
+// matilda.calcAge = jonas.calcAge;
+// matilda.calcAge();
+
+// even though the method is in Jonas but it was the Matilda object that
+// called it,so the "this keyword will always point to the object that called it"
+
+// const f = jonas.calcAge;
+// f()
+// the"this" keyword here will return undefined bc there's no object handling the "f"
