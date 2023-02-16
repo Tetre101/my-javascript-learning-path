@@ -880,3 +880,67 @@
 // const f = jonas.calcAge;
 // f()
 // the"this" keyword here will return undefined bc there's no object handling the "f"
+
+// PITFALLS OF "THIS" KEYWORD
+// REGULAR FUNCTIONS VS ARROW FUNCTIONS
+
+// var firstName = 'Matilda'
+// const jonas = {
+//   firstName: "Jonas",
+//   year: 1994,
+//   calcAge: function () {
+//     console.log(this);
+//     console.log(2037 - this.year);
+//   },
+//   greet: () => console.log(`Hello ${this.firstName}`),
+// };
+// jonas.greet();
+
+// console.log(this.firstName);
+// the reason for the output :Hello undefined" is bc an arrow function
+// doesn't get it's own "this" keyword
+// NOTE: NEVERR USE ARROW FUNCTIONS FOR METHOD
+// A regular function call has the "this" keyword set to undefined
+// An arrow function inherits the this keyword from it's parent scope
+// function in a method
+// const jonas = {
+//   firstName: "Jonas",
+//   year: 1994,
+//   calcAge: function () {
+//     console.log(this);
+//     console.log(2037 - this.year);
+// solution 1
+// const self = this;
+//     const isMillenial = function () {
+//       console.log(self);
+//       console.log(self.year >= 1981 && self.year <= 1996);
+//     };
+
+// solution 2
+
+//     const isMillenial = () => {
+//       console.log(this);
+//       console.log(this.year >= 1981 && this.year <= 1996);
+//     };
+//     isMillenial();
+//   },
+//   greet: () => console.log(`Hello ${this.firstName}`),
+// };
+// jonas.greet();
+// jonas.calcAge();
+
+// Arguments keyword
+// const addExpress = function (a, b) {
+//   console.log(arguments);
+//   return a + b;
+// };
+
+// addExpress(2, 4, 8, 10);
+
+// var addArrow = (a, b) => {
+//   console.log(arguments);
+//   return a + b;
+// };
+
+// addArrow(2, 5, 8);
+//  The arguments keyword exists but only in function expression and not arrow function
