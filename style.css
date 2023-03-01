@@ -1,0 +1,8 @@
+/* body:hover {
+  width: 200%;
+  background-color: brown;
+} */
+img:hover {
+  cursor: pointer;
+  width: 400px;
+}

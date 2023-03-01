@@ -3,8 +3,6 @@
 // storeWall.innerHTML = "H1 successfully created";
 // body.appendChild(storeWall);
 
-const { isType } = require("graphql");
-
 // let dogs = document.querySelectorAll('.img-dog');
 // for(let dog of dogs){
 //   dog.remove()
@@ -956,3 +954,116 @@ a new li element
 
 //   console.log(instrArray)
 // console.log(result)
+// function getData() {
+//   fetch("https://swapi.dev/api/people")
+//     .then(function (res) {
+//       return res.json();
+//     })
+//     .then(function (data) {
+//       console.log(data.results[1].films);
+//     });
+// }
+
+// setTimeout(getData, 4000);
+
+// function fetchGitHubProfileJSON() {
+//   const username = 'defunkt';
+//   const url = `https://api.github.com/users/${username}`;
+//   fetch(url)
+//     .then(function(response) {
+//       return response.json();
+//     })
+//     .then(function(profile) {
+//       const profileHtml = `
+//         <p><strong>${profile.name}</strong></p>
+//         <img src="${profile.avatar_url}" />
+//       `;
+//       document.querySelector('#github-profile').innerHTML = profileHtml;
+//     });
+// }
+
+// fetchGitHubProfileJSON();
+
+// function fetchPokemonJSON() {
+//   // Feel free to download this HTML and edit it, to use another Pokemon ID
+//   const pokemonId = 1;
+//   const url = `https://pokeapi.co/api/v2/pokemon/${pokemonId}`;
+//   axios
+//     .get(url)
+//     .then(function (response) {
+//       return response.data; // response.data instead of response.json() with fetch
+// })
+// .then(function (pokemon) {
+//   console.log("data decoded from JSON:", pokemon);
+
+// Build a block of HTML
+//       const pokemonHtml = `
+//         <p><strong>${pokemon.name}</strong></p>
+//         <img src="${pokemon.sprites.front_shiny}" />
+//       `;
+//       document.querySelector("body").innerHTML = pokemonHtml;
+//     });
+// }
+
+// fetchPokemonJSON();
+
+// async function asyncLearn() {
+//   try {
+//     const url = `https://api.chucknorris.io/jokes/random`;
+//     const fetch = await axios.get(url)
+//     const data = await fetch.json();
+//     return data.value;
+//   } catch (error) {
+//     console.log(error);
+//   }
+// }
+// asyncLearn();
+
+// Async and await
+// function resolveAfter2Seconds() {
+//   return new Promise(resolve => {
+//     setTimeout(() => {
+//       resolve('resolved');
+//     }, 2000);
+//   });
+// }
+
+// async function asyncCall() {
+//   console.log('calling');
+//   const result = await resolveAfter2Seconds();
+//   console.log(result);
+//   // Expected output: "resolved"
+// }
+
+// asyncCall();
+
+// async function getResult(){
+//  const answer =  await resolveAfter2Seconds();
+//   console.log(answer);
+// };
+// getResult();
+
+// Using an arrow function
+// const getResult= async ()=>{
+//   const answer = await resolveAfter2Seconds();
+//   console.log(answer);
+// }
+
+// USING TRY CATCH IN ASYNC AND AWAIT
+// function resolveAfter2Seconds() {
+//   return new Promise((resolve) => {
+//     setTimeout(() => {
+//       resolve("resolved");
+//     }, 2000);
+//   });
+// }
+
+// async function asyncCall() {
+//   try {
+//     const result = await resolveAfter2Seconds();
+//     console.log(result);
+//   } catch (error) {
+//     console.log("error found");
+//   }
+// }
+// asyncCall();

@@ -944,3 +944,24 @@
 
 // addArrow(2, 5, 8);
 //  The arguments keyword exists but only in function expression and not arrow function
+
+// PRIMITIVES VS OBJECTS
+// let age = 28;
+// let oldAge = age;
+// age = 29
+// console.log(age);
+// console.log(oldAge);
+// what happens is that the oldage retains the value of the initial age declared
+// this makes sense because it keeps the value assigned to age before it was changed
+
+// const me = {
+//   name: "peter",
+//   age: 27,
+// };
+
+// const friend = me;
+// friend.age = 25;
+// console.log(friend);
+// console.log(me);
+// this looks like an abnormally because my age has changed to my friends age
+// and friend.age was changed but not me.age.
